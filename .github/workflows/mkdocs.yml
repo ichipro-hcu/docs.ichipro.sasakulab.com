@@ -8,6 +8,9 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./src
     steps:
       - uses: actions/checkout@v4
       - name: Configure Git Credentials
@@ -18,9 +21,6 @@ jobs:
         with:
           python-version: 3.x
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
-
-      - name: Change to the src directory
-        run: cd src
 
       - uses: actions/cache@v4
         with:
