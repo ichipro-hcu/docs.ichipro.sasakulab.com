@@ -4,6 +4,8 @@ The documentation for the Ichipro Project.
 
 ## Set Up
 
+This Repository is managed by rye. We require the rye CLI to be installed to manage the repository.
+
 ```zsh
 git clone https://github.com/ichipro-hcu/docs.ichipro.sasakulab.com.git // Git
 # gh repo clone ichipro-hcu/docs.ichipro.sasakulab.com // GitHub CLI
